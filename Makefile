@@ -6,16 +6,13 @@
 #    By: tsitoand <tsitoand@student.42antananari    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/05 07:57:23 by tsitoand          #+#    #+#              #
-#    Updated: 2026/02/05 15:18:26 by tsitoand         ###   ########.fr        #
+#    Updated: 2026/02/06 09:26:41 by tsitoand         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC= cc
 CFLAGS= -Wall -Wextra -Werror
 NAME= libft.a
-SRC_DIR = src
-OBJ_DIR = obj
-INCLUDE_DIR = include
 SRC = ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
@@ -57,25 +54,21 @@ SRC = ft_isalnum.c \
 		ft_lstadd_back.c \
 		ft_lstdelone.c \
 		ft_lstclear.c \
-		ft_lstiter.c
+		ft_lstiter.c \
+		ft_lstmap.c
 
-SOURCE = $(addprefix $(SRC_DIR)/, $(SRC))
-
-OBJET= $(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
+OBJ = $(SRC:.c=.o)
 
 all : $(NAME)
 
-$(OBJ_DIR) :
-	mkdir -p $(OBJ_DIR)
-
-$(NAME) : $(OBJET)
+$(NAME) : $(OBJ)
 	ar rsc $@ $^
 
-$(OBJ_DIR)/%.o : $(SRC_DIR)/%.c $(INCLUDE_DIR) | $(OBJ_DIR)
-	$(CC) $(CFLAGS) -I $(INCLUDE_DIR) -c $< -o $@
+%.o : %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :
-	rm -rf $(OBJ_DIR)
+	rm -rf *.o
 
 fclean : clean
 	rm -rv $(NAME)

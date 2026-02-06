@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tsitoand <tsitoand@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/05 14:39:09 by tsitoand          #+#    #+#             */
-/*   Updated: 2026/02/05 15:21:18 by tsitoand         ###   ########.fr       */
+/*   Created: 2026/02/03 16:10:59 by tsitoand          #+#    #+#             */
+/*   Updated: 2026/02/06 15:33:42 by tsitoand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_putchar_fd(char c, int fd)
 {
-	t_list	*temp;
-
-	if (!lst || !del)
+	if (fd < 0)
 		return ;
-	while (*lst)
-	{
-		temp = (*lst)-> next;
-		ft_lstdelone(*lst, del);
-		*lst = temp;
-	}
+	write(fd, &c, 1);
 }

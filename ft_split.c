@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tsitoand <tsitoand@student.42antananarivo  +#+  +:+       +#+        */
+/*   By: tsitoand <tsitoand@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/03 08:55:34 by tsitoand          #+#    #+#             */
-/*   Updated: 2026/02/03 14:11:08 by tsitoand         ###   ########.fr       */
+/*   Updated: 2026/02/06 15:44:28 by tsitoand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,8 @@ char	**ft_split(char const *s, char c)
 	size_t	j;
 	char	**str;
 
+	if (s == NULL)
+		return (NULL);
 	str = malloc (sizeof(char *) * (word_count(s, c) + 1));
 	if (!str)
 		return (NULL);
