@@ -85,7 +85,7 @@ list.
 ## Instructions
 First, clone the `libft` repository:
 ```shell
-git clone git@vogsphere.42antananarivo.mg:vogsphere/intra-uuid-21007c2d-a263-49d5-89af-88267e7f2a76-7176559-tsitoand libft
+git clone git@github.com:harilecon/vigilant-octo-invention.git libft
 ```
 Move into the project folder:
 ```shell
