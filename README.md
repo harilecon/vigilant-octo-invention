@@ -85,11 +85,11 @@ list.
 ## Instructions
 First, clone the `libft` repository:
 ```shell
-$ git clone git@vogsphere.42antananarivo.mg:vogsphere/intra-uuid-21007c2d-a263-49d5-89af-88267e7f2a76-7176559-tsitoand libft
+git clone git@vogsphere.42antananarivo.mg:vogsphere/intra-uuid-21007c2d-a263-49d5-89af-88267e7f2a76-7176559-tsitoand libft
 ```
 Move into the project folder:
 ```shell
-$ cd libft
+cd libft
 ```
 Use the following `make` commands depending on your needs:
 
@@ -114,7 +114,7 @@ int	main(void)
 ```
 Then compile with `main.c`
 ```shell
-$ cc -Wall -Wextra -Werror main.c libft.a    #include "libft.h"
+cc -Wall -Wextra -Werror main.c libft.a    #include "libft.h"
 ```
 
 ## Ressources
