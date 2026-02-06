@@ -94,10 +94,10 @@ $ cd libft
 Use the following `make` commands depending on your needs:
 
 ```shell
-$ make all      # Compile the libft library
-$ make clean    # Remove object files (.o)
-$ make fclean   # Remove object files and the libft.a library
-$ make re       # Clean everything and recompile (same as fclean + make all)
+make all      # Compile the libft library
+make clean    # Remove object files (.o)
+make fclean   # Remove object files and the libft.a library
+make re       # Clean everything and recompile (same as fclean + make all)
 
 ```
 Exemple of use<br>
