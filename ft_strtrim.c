@@ -6,7 +6,7 @@
 /*   By: tsitoand <tsitoand@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 09:20:41 by tsitoand          #+#    #+#             */
-/*   Updated: 2026/02/06 20:30:59 by tsitoand         ###   ########.fr       */
+/*   Updated: 2026/02/07 13:12:55 by yourLogin        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	begin;
 	size_t	end;
-	size_t	i;
 	char	*str;
 
 	if (!s1)
@@ -60,6 +59,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_calloc(end - begin + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	i = 0;
 	return (fill(begin, end, s1, str));
 }
