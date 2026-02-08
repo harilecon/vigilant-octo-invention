@@ -24,12 +24,11 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-int		ft_isdigit( int c );
+int		ft_isdigit(int c);
 int		ft_lstsize(t_list *lst);
 int		ft_atoi(const char *nptr);
 int		ft_isalpha(int c);
 int		ft_isalnum(int c);
-int		ft_isdigit( int c );
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
