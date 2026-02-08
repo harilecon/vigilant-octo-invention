@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by tsitoand .*
+pyenv: cannot rehash: /opt/pyenv/shims isn't writable
 
 # libft
 
