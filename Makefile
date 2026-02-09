@@ -68,10 +68,10 @@ $(NAME) : $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean :
-	rm -rf *.o
+	rm -rf $(OBJ)
 
 fclean : clean
-	rm -rv $(NAME)
+	rm -rf $(NAME)
 
 re : fclean all
 
