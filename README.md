@@ -118,7 +118,7 @@ Then compile with `main.c`
  cc -Wall -Wextra -Werror main.c libft.a    #include "libft.h"
 ```
 
-## Ressources
+## Resources
 [Libft | Guide](https://42-cursus.gitbook.io/guide/0-rank-00/libft)<br>
 [learn-c](https://www.learn-c.org/en/Linked_lists)
 <br>
