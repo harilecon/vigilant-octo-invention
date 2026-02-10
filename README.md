@@ -86,19 +86,19 @@ list.
 ## Instructions
 First, clone the `libft` repository:
 ```shell
- git clone https://github.com/harilecon/vigilant-octo-invention.git libft
+git clone https://github.com/harilecon/vigilant-octo-invention.git libft
 ```
 Move into the project folder:
 ```shell
- cd libft
+cd libft
 ```
 Use the following `make` commands depending on your needs:
 
 ```shell
- make all      # Compile the libft library
- make clean    # Remove object files (.o)
- make fclean   # Remove object files and the libft.a library
- make re       # Clean everything and recompile (same as fclean + make all)
+make all      # Compile the libft library
+make clean    # Remove object files (.o)
+make fclean   # Remove object files and the libft.a library
+make re       # Clean everything and recompile (same as fclean + make all)
 
 ```
 Exemple of use<br>
@@ -115,7 +115,7 @@ int	main(void)
 ```
 Then compile with `main.c`
 ```shell
- cc -Wall -Wextra -Werror main.c libft.a    #include "libft.h"
+cc -Wall -Wextra -Werror main.c libft.a -o my_program   #include "libft.h"
 ```
 
 ## Resources
