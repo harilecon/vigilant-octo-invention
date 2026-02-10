@@ -84,12 +84,9 @@ Implement functions using a structure to manipulate linked
 list.
 
 ## Instructions
-First, clone the `libft` repository:
+First, clone the `libft` repository move into It.
 ```shell
 git clone https://github.com/harilecon/vigilant-octo-invention.git libft
-```
-Move into the project folder:
-```shell
 cd libft
 ```
 Use the following `make` commands depending on your needs:
@@ -113,9 +110,13 @@ int	main(void)
 	return (0);
 }
 ```
-Then compile with `main.c`
+Compile with `main.c`
 ```shell
 cc -Wall -Wextra -Werror main.c libft.a -o my_program   #include "libft.h"
+```
+Then run `my_proram`
+```shell
+./my_program
 ```
 
 ## Resources
