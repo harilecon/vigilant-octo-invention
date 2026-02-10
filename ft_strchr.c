@@ -6,11 +6,9 @@
 /*   By: tsitoand <tsitoand@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 09:18:54 by tsitoand          #+#    #+#             */
-/*   Updated: 2026/01/23 23:19:55 by tsitoand         ###   ########.fr       */
+/*   Updated: 2026/02/10 05:46:46 by tsitoand         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
 {
